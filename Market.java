@@ -2,7 +2,6 @@ import java.io.*;
 public class Market {
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n=Integer.parseInt(br.readLine());
         System.out.print("Enter the parent name:");
         String p=br.readLine();
         String Yes_no=br.readLine();
@@ -11,9 +10,9 @@ public class Market {
             String c=br.readLine();
             String child[]=c.split(",");
             int members=child.length+1;
-            int commission=5000*child.length;
+            int commission=500*child.length;
             System.out.println("Total members:"+members);
-            System.out.println("Commission Details:\n\t"+p+":"+commission);
+            System.out.println("Commission Details:"+p+":"+commission);
             for(String ch:child){
                 System.out.println("Children Commision:250 INR");
             }
